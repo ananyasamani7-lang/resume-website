@@ -1,0 +1,119 @@
+/* --- General Page Style --- */
+body {
+  font-family: 'Poppins', sans-serif;
+  background: radial-gradient(circle at top left, #e7e6ff, #f8f5ff);
+  color: #1a0938;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+/* --- Header --- */
+header {
+  background: linear-gradient(90deg, #6a00f4, #00e0b8);
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 1.8em;
+  letter-spacing: 1px;
+}
+
+nav ul {
+  list-style: none;
+  margin: 10px 0 0;
+  padding: 0;
+}
+
+nav li {
+  display: inline-block;
+  margin: 0 15px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  color: #ff4ecd;
+  text-shadow: 0 0 8px #ff4ecd;
+}
+
+/* --- Intro Section --- */
+.intro {
+  text-align: center;
+  margin: 60px auto;
+  width: 80%;
+  background: #ffffffcc;
+  border-radius: 20px;
+  padding: 30px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  animation: fadeIn 1.5s ease;
+}
+
+.intro h2 {
+  color: #6a00f4;
+  font-size: 1.6em;
+}
+
+.intro h3 {
+  color: #240046;
+  font-size: 1.8em;
+  margin-top: 5px;
+}
+
+.profile-img {
+  margin: 20px auto;
+  display: block;
+  border-radius: 50%;
+  border: 3px solid #00e0b8;
+  box-shadow: 0 0 20px rgba(106, 0, 244, 0.4);
+}
+
+/* --- Buttons --- */
+.btn {
+  display: inline-block;
+  background: linear-gradient(90deg, #6a00f4, #00e0b8);
+  color: white;
+  padding: 12px 25px;
+  margin: 10px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  transition: all 0.3s ease;
+  box-shadow: 0 3px 10px rgba(106, 0, 244, 0.3);
+}
+
+.btn:hover {
+  background: linear-gradient(90deg, #00e0b8, #6a00f4);
+  transform: scale(1.05);
+  box-shadow: 0 5px 20px rgba(255, 78, 205, 0.4);
+}
+
+/* --- Footer --- */
+footer {
+  background: #240046;
+  color: #e7e6ff;
+  text-align: center;
+  padding: 12px;
+  margin-top: 40px;
+  font-size: 0.9em;
+  letter-spacing: 0.5px;
+}
+
+/* --- Animations --- */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
