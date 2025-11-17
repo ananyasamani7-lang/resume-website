@@ -5,6 +5,72 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Our Resume</title>
   <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif; /* exact same font */
+      margin: 0;
+      padding: 0;
+      background-color: #ffffff; /* same background */
+    }
+
+    header {
+      text-align: center;
+      padding: 20px;
+      background-color: #f8f8f8;
+    }
+
+    nav ul {
+      list-style-type: none;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: black;
+      font-weight: bold;
+    }
+
+    nav ul li a.active {
+      color: #00bfff;
+    }
+
+    .intro {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    /* Side-by-side layout */
+    .resumes-container {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      padding: 20px;
+      flex-wrap: nowrap; /* side by side */
+    }
+
+    .person {
+      background-color: #f0f8ff; /* same theme */
+      padding: 15px;
+      border-radius: 10px;
+      width: 45%; /* two columns */
+      box-sizing: border-box;
+      /* allow vertical scrolling inside column if content too long */
+    }
+
+    h2, h3 {
+      margin: 10px 0 5px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 15px;
+      background-color: #f8f8f8;
+      margin-top: 20px;
+    }
+  </style>
 </head>
 <body>
 <header>
@@ -12,7 +78,7 @@
   <nav>
     <ul>
       <li><a href="index.html">Home</a></li>
-      <li><a href="biodata.html">Bio-data</a></li>
+      <li><a href="biodata.html" class="active">Resume</a></li>
       <li><a href="contact.html">Contact</a></li>
     </ul>
   </nav>
@@ -20,34 +86,59 @@
 
 <section class="intro">
   <h2>Ananya S Samani & Chetana S Pai</h2>
-  <p><em>Enthusiastic Computer Science students with a passion for web design, problem solving, and innovative technology.</em></p>
-
-  <h3>🎓 Education</h3>
-  <ul>
-    <li>B.Sc Computer Science – Canara Engineerung  College (2022–2025)</li>
-    <li>Higher Secondary – Agnes College (2020)</li>
-  </ul>
-
-  <h3>💻 Technical Skills</h3>
-  <ul>
-    <li>HTML, CSS, JavaScript, Python</li>
-    <li>MySQL & Database Management</li>
-    <li>Responsive Design & Version Control (Git)</li>
-  </ul>
-
-  <h3>🧩 Projects</h3>
-  <p><strong>GreenPulse Chatbot:</strong> An AI-based agriculture assistant helping farmers with crop information and soil analysis.</p>
-
-  <h3>🏆 Achievements</h3>
-  <ul>
-    <li>Secured First place in Web Design Competition 2024</li>
-    <li>Participated in Hackathon on Sustainability 2023</li>
-  </ul>
+  <p><em>Enthusiastic Computer Science students passionate about web design, problem solving, and innovation.</em></p>
+  <hr>
 </section>
+
+<!-- Side-by-side resumes -->
+<div class="resumes-container">
+  <!-- Ananya -->
+  <div class="person">
+    <h2>👩‍💻 Ananya S Samani</h2>
+    <h3>🎓 Education</h3>
+    <ul>
+      <li>B.Sc Computer Science – Canara College (2022–2027)</li>
+      <li>Higher Secondary – Agnes College(2020)</li>
+    </ul>
+    <h3>💻 Technical Skills</h3>
+    <ul>
+      <li>HTML, CSS, JavaScript, Python</li>
+      <li>MySQL & Database Management</li>
+      <li>Responsive Design & Git</li>
+    </ul>
+    <h3>🧩 Project</h3>
+    <p><strong>GreenPulse Chatbot:</strong> Smart agriculture chatbot for farmers with crop and soil insights.</p>
+    <h3>🏆 Achievements</h3>
+    <ul>
+      <li>Active participant in coding hackathons</li>
+    </ul>
+  </div>
+
+  <!-- Chetana -->
+  <div class="person">
+    <h2>👩‍💻 Chetana S Pai</h2>
+    <h3>🎓 Education</h3>
+    <ul>
+      <li>B.Sc Computer Science – Canara College (2022–2025)</li>
+      <li>Higher Secondary –  School (2020)</li>
+    </ul>
+    <h3>💻 Technical Skills</h3>
+    <ul>
+      <li>HTML, CSS, C, Python</li>
+      <li>UI/UX Design & Creativity Tools</li>
+      <li>Photography and Graphic Design</li>
+    </ul>
+    <h3>🧩 Project</h3>
+    <p><strong>GreenPulse Chatbot:</strong> AI-based project assisting farmers with sustainable solutions.</p>
+    <h3>🏆 Achievements</h3>
+    <ul>
+      <li>Designed multiple creative layouts for academic projects</li>
+    </ul>
+  </div>
+</div>
 
 <footer>
   <p>© 2025 | Created by Ananya S Samani & Chetana S Pai</p>
 </footer>
 </body>
 </html>
-
